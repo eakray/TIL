@@ -11,12 +11,17 @@ warrant a full blog post.
 ### Categories
 
 * [JavaScript](#javascript)
+* [Vim](#vim)
 
 ---
 
 ### JavaScript
 
-- [test](javascript/test.md)
+- - [Ways to Create a Range](javascript/range.md)
+
+### Vim
+
+- [How to quit](vim/quit.md)
 
 ---
 
