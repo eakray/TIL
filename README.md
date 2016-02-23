@@ -17,7 +17,7 @@ warrant a full blog post.
 
 ### JavaScript
 
-- - [Ways to Create a Range](javascript/range.md)
+- [Ways to Create a Range](javascript/range.md)
 
 ### Vim
 
