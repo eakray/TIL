@@ -4,33 +4,30 @@ Javascript does not have a native range method. One can use underscore's or loda
 
 ES5
 
-```
-function range1(i){return i?range1(i-1).concat(i):[]}
+```javascript
+function range(i){return i?range(i-1).concat(i):[]}
 
-function range2(i){var x=[];var i=1;while(x.push(i++)<i){};return x}
+function range(i){var x=[];var i=1;while(x.push(i++)<i){};return x}
 ```
 
 ES6
 
-```
-const range1 = len => Object.keys(new Int8Array(len)).map(parseFloat);
+```javascript
+const range = (start, end) => Array.apply(null, Array(end - start)).map((_, i) => start + i);
 
-const range2 = len => Array.apply(null, {length: len}).map(Number.call, Number);
+const range = len => Array.apply(null, {length: len}).map(Number.call, Number);
 
-const range3 = (start, end) => Array.apply(null, Array(end - start)).map((_, i) => start + i);
+const range = (start, end) => [...Array(end - start)].map((_, i) => start + i);
 
-const range4 = (start, end) => [...Array(end - start)].map((_, i) => start + i);
+const range = len => Object.keys(Array.apply(null, Array(len)));
 
-const range5 = len => Object.keys(Array.apply(null, Array(len)));
+const range = (start, end) => [...Array(end - start)].map((_, i) => start + i);
 
-const range6 = (start, end) => [...Array(end - start)].map((_, i) => start + i);
-
-const range7 = (start, end) => Array.from(Array(end - start), (_, i) => start + i);
+const range = (start, end) => Array.from(Array(end - start), (_, i) => start + i);
 
 const range = (start, end) => Array.from({length: end - start}).map((_, i) => start + i);
 
+const range = n => Array(n).fill().map((v, i) => i)
 
-const range8 = n => Array(n).fill().map((v, i) => i)
-
-const range9 = (start, end) => Array(end - start).fill().map((v, i) => i + start)
+const range = (start, end) => Array(end - start).fill().map((v, i) => i + start)
 ```
