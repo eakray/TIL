@@ -5,9 +5,9 @@ Javascript does not have a native range method. One can use underscore's or loda
 ES5
 
 ```javascript
-function range(i){return i?range(i-1).concat(i):[]}
+function range(i){return i?range(i-1).concat(i):[];}
 
-function range(i){var x=[];var i=1;while(x.push(i++)<i){};return x}
+function range(n){var x=[];var i=1;while(i<=n){x.push(i++);}return x;}
 ```
 
 ES6
