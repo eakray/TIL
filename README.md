@@ -22,6 +22,7 @@ warrant a full blog post.
 ### Vim
 
 - [How to quit](vim/quit.md)
+- [Time Machine Revert](vim/timeMachineRevert.md)
 
 ---
 
